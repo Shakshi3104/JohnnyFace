@@ -13,7 +13,7 @@
 		11063F691EC0EECC0033EE6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11063F681EC0EECC0033EE6D /* Assets.xcassets */; };
 		11063F741EC0F5270033EE6D /* CGImagePropertyOrientation+UIImageOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11063F731EC0F5270033EE6D /* CGImagePropertyOrientation+UIImageOrientation.swift */; };
 		113695D81EC1151400CA6C43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 113695D61EC1151400CA6C43 /* LaunchScreen.storyboard */; };
-		CE67E01725933EEE0070CB44 /* JohnnyFaceDetector.mlmodel 18-00-53-857.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = CE67E01625933EEE0070CB44 /* JohnnyFaceDetector.mlmodel 18-00-53-857.mlmodel */; };
+		CE67E01A25933F620070CB44 /* JohnnyFaceDetector.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = CE67E01925933F620070CB44 /* JohnnyFaceDetector.mlmodel */; };
 		CEEF4F702592E32000CCC216 /* IMG_4856.PNG in Resources */ = {isa = PBXBuildFile; fileRef = CEEF4F6C2592E31B00CCC216 /* IMG_4856.PNG */; };
 		CEEF4F712592E32000CCC216 /* IMG_4858.PNG in Resources */ = {isa = PBXBuildFile; fileRef = CEEF4F6D2592E31C00CCC216 /* IMG_4858.PNG */; };
 		CEEF4F722592E32000CCC216 /* IMG_4853.PNG in Resources */ = {isa = PBXBuildFile; fileRef = CEEF4F6E2592E31E00CCC216 /* IMG_4853.PNG */; };
@@ -30,7 +30,7 @@
 		11063F731EC0F5270033EE6D /* CGImagePropertyOrientation+UIImageOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImagePropertyOrientation+UIImageOrientation.swift"; sourceTree = "<group>"; };
 		113695D71EC1151400CA6C43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C858E5CC1ECA99CC006C5CAA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		CE67E01625933EEE0070CB44 /* JohnnyFaceDetector.mlmodel 18-00-53-857.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "JohnnyFaceDetector.mlmodel 18-00-53-857.mlmodel"; sourceTree = "<group>"; };
+		CE67E01925933F620070CB44 /* JohnnyFaceDetector.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = JohnnyFaceDetector.mlmodel; sourceTree = "<group>"; };
 		CEEF4F6C2592E31B00CCC216 /* IMG_4856.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_4856.PNG; sourceTree = "<group>"; };
 		CEEF4F6D2592E31C00CCC216 /* IMG_4858.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_4858.PNG; sourceTree = "<group>"; };
 		CEEF4F6E2592E31E00CCC216 /* IMG_4853.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_4853.PNG; sourceTree = "<group>"; };
@@ -69,7 +69,7 @@
 		11063F601EC0EECC0033EE6D /* JohnnyFace */ = {
 			isa = PBXGroup;
 			children = (
-				CE67E01625933EEE0070CB44 /* JohnnyFaceDetector.mlmodel 18-00-53-857.mlmodel */,
+				CE67E01925933F620070CB44 /* JohnnyFaceDetector.mlmodel */,
 				11063F611EC0EECC0033EE6D /* AppDelegate.swift */,
 				11063F631EC0EECC0033EE6D /* ImageClassificationViewController.swift */,
 				11063F731EC0F5270033EE6D /* CGImagePropertyOrientation+UIImageOrientation.swift */,
@@ -177,8 +177,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				11063F741EC0F5270033EE6D /* CGImagePropertyOrientation+UIImageOrientation.swift in Sources */,
+				CE67E01A25933F620070CB44 /* JohnnyFaceDetector.mlmodel in Sources */,
 				11063F641EC0EECC0033EE6D /* ImageClassificationViewController.swift in Sources */,
-				CE67E01725933EEE0070CB44 /* JohnnyFaceDetector.mlmodel 18-00-53-857.mlmodel in Sources */,
 				11063F621EC0EECC0033EE6D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
