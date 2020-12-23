@@ -1,4 +1,4 @@
-# JohhnyFace
+# JohnnyFace
 
 This application can detect Johhny's face.
 
