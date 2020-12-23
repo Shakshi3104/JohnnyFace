@@ -1,6 +1,6 @@
 # JohnnyFace
 
-This application can detect Johhny's face.
+This application can detect Johnny's face.
 
 It is based on the Vision and Core ML sample code provided by Apple: [Classifying Images with Vision and Core ML](https://developer.apple.com/documentation/vision/classifying_images_with_vision_and_core_ml).
 
