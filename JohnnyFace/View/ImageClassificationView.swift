@@ -40,7 +40,7 @@ struct ImageClassificationView: View {
                     .foregroundColor(.black)
                     .background(
                         RoundedRectangle(cornerRadius: 10)
-                            .foregroundColor(.secondary)
+                            .foregroundColor(.white.opacity(0.9))
                     )
                 
                 // select camera or photo library
