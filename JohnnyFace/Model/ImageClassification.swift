@@ -72,13 +72,24 @@ class ImageClassification: ObservableObject {
             if classifications.isEmpty {
                 self.classificationLabel = "Nothing recognized."
             } else {
-                // Display top classifications ranked by confidence in the UI.
-                let topClassifications = classifications.prefix(2)
-                let descriptions = topClassifications.map { classification in
-                    // Formats the classification for display; e.g. "(0.37) cliff, drop, drop-off".
-                    return String(format: "  (%.2f) %@", classification.confidence, classification.identifier)
-                }
-                self.classificationLabel = "Classification:\n" + descriptions.joined(separator: "\n")
+                // Display top classifications label
+                let topClassification = classifications[0]
+                let description = { () -> String in
+                    let confidence = topClassification.confidence
+                    let identifier = topClassification.identifier
+                    
+                    if confidence >= 0.9 {
+                        return "\(identifier)!"
+                    } else if confidence >= 0.7 {
+                        return "Likely \(identifier)."
+                    } else if confidence >= 0.5 {
+                        return "Maybe \(identifier)."
+                    } else {
+                        return "\(identifier)...?"
+                    }
+                }()
+                
+                self.classificationLabel = description
             }
         }
     }
