@@ -1,0 +1,18 @@
+{
+  "Outputs" : {
+    "classLabel" : {
+      "MLFeatureShortDescription" : "Johnny's or not"
+    },
+    "Identity" : {
+      "MLFeatureShortDescription" : "Probability of prediction"
+    }
+  },
+  "Inputs" : {
+    "input_1" : {
+      "MLFeatureShortDescription" : "Input face image to be classified"
+    }
+  },
+  "TrainingInputs" : {
+
+  }
+}

@@ -11,6 +11,10 @@
 		CE37E1F727FB1C470046C1D5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE37E1F627FB1C470046C1D5 /* ContentView.swift */; };
 		CE37E1F927FB1C480046C1D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE37E1F827FB1C480046C1D5 /* Assets.xcassets */; };
 		CE37E1FC27FB1C480046C1D5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE37E1FB27FB1C480046C1D5 /* Preview Assets.xcassets */; };
+		CE37E20D27FB1CE20046C1D5 /* CGImagePropertyOrientation+UIImageOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE37E20C27FB1CE20046C1D5 /* CGImagePropertyOrientation+UIImageOrientation.swift */; };
+		CE37E20F27FB1D060046C1D5 /* ImageClassification.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE37E20E27FB1D060046C1D5 /* ImageClassification.swift */; };
+		CE37E21127FB1D290046C1D5 /* JohnnyFaceDetector.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = CE37E21027FB1D290046C1D5 /* JohnnyFaceDetector.mlpackage */; };
+		CE37E21327FB1D790046C1D5 /* ImageClassificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE37E21227FB1D790046C1D5 /* ImageClassificationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,15 @@
 		CE37E1F627FB1C470046C1D5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CE37E1F827FB1C480046C1D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE37E1FB27FB1C480046C1D5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CE37E20527FB1C670046C1D5 /* IMG_4853.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_4853.PNG; sourceTree = "<group>"; };
+		CE37E20627FB1C670046C1D5 /* IMG_4856.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_4856.PNG; sourceTree = "<group>"; };
+		CE37E20727FB1C670046C1D5 /* IMG_4858.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_4858.PNG; sourceTree = "<group>"; };
+		CE37E20827FB1C670046C1D5 /* IMG_4860.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_4860.PNG; sourceTree = "<group>"; };
+		CE37E20927FB1C740046C1D5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CE37E20C27FB1CE20046C1D5 /* CGImagePropertyOrientation+UIImageOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImagePropertyOrientation+UIImageOrientation.swift"; sourceTree = "<group>"; };
+		CE37E20E27FB1D060046C1D5 /* ImageClassification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClassification.swift; sourceTree = "<group>"; };
+		CE37E21027FB1D290046C1D5 /* JohnnyFaceDetector.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = JohnnyFaceDetector.mlpackage; sourceTree = "<group>"; };
+		CE37E21227FB1D790046C1D5 /* ImageClassificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClassificationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +48,8 @@
 		CE37E1E827FB1C470046C1D5 = {
 			isa = PBXGroup;
 			children = (
+				CE37E20927FB1C740046C1D5 /* README.md */,
+				CE37E20427FB1C670046C1D5 /* materials */,
 				CE37E1F327FB1C470046C1D5 /* JohnnyFace */,
 				CE37E1F227FB1C470046C1D5 /* Products */,
 			);
@@ -51,8 +66,9 @@
 		CE37E1F327FB1C470046C1D5 /* JohnnyFace */ = {
 			isa = PBXGroup;
 			children = (
+				CE37E20B27FB1C9E0046C1D5 /* Model */,
+				CE37E20A27FB1C910046C1D5 /* View */,
 				CE37E1F427FB1C470046C1D5 /* JohnnyFaceApp.swift */,
-				CE37E1F627FB1C470046C1D5 /* ContentView.swift */,
 				CE37E1F827FB1C480046C1D5 /* Assets.xcassets */,
 				CE37E1FA27FB1C480046C1D5 /* Preview Content */,
 			);
@@ -65,6 +81,36 @@
 				CE37E1FB27FB1C480046C1D5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CE37E20427FB1C670046C1D5 /* materials */ = {
+			isa = PBXGroup;
+			children = (
+				CE37E20527FB1C670046C1D5 /* IMG_4853.PNG */,
+				CE37E20627FB1C670046C1D5 /* IMG_4856.PNG */,
+				CE37E20727FB1C670046C1D5 /* IMG_4858.PNG */,
+				CE37E20827FB1C670046C1D5 /* IMG_4860.PNG */,
+			);
+			path = materials;
+			sourceTree = "<group>";
+		};
+		CE37E20A27FB1C910046C1D5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE37E1F627FB1C470046C1D5 /* ContentView.swift */,
+				CE37E21227FB1D790046C1D5 /* ImageClassificationView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE37E20B27FB1C9E0046C1D5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE37E21027FB1D290046C1D5 /* JohnnyFaceDetector.mlpackage */,
+				CE37E20C27FB1CE20046C1D5 /* CGImagePropertyOrientation+UIImageOrientation.swift */,
+				CE37E20E27FB1D060046C1D5 /* ImageClassification.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +183,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE37E20D27FB1CE20046C1D5 /* CGImagePropertyOrientation+UIImageOrientation.swift in Sources */,
+				CE37E20F27FB1D060046C1D5 /* ImageClassification.swift in Sources */,
+				CE37E21327FB1D790046C1D5 /* ImageClassificationView.swift in Sources */,
 				CE37E1F727FB1C470046C1D5 /* ContentView.swift in Sources */,
+				CE37E21127FB1D290046C1D5 /* JohnnyFaceDetector.mlpackage in Sources */,
 				CE37E1F527FB1C470046C1D5 /* JohnnyFaceApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,16 +322,18 @@
 				DEVELOPMENT_TEAM = WHBF4Z49B6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "Takes pictures to judge if the face is Johnny's or not.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.shakshi.JohnnyFace;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -301,16 +353,18 @@
 				DEVELOPMENT_TEAM = WHBF4Z49B6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "Takes pictures to judge if the face is Johnny's or not.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.shakshi.JohnnyFace;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
